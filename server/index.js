@@ -37,6 +37,7 @@ app.post('/api/booking', function(req, res){
 app.post('/api/user', function(req, res){
 	console.log('body', req.body);
 	var user = new User({
+		username: req.body.username,
     	first: req.body.first,
         last: req.body.last,
         password: req.body.password, 

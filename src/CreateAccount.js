@@ -8,6 +8,7 @@ export default class CreateAccount extends Component {
   constructor(props){
     super(props);
     this.state = {
+    username: '',
     first: '',
     last: '', 
     password: '',
@@ -15,6 +16,10 @@ export default class CreateAccount extends Component {
     phone: ''
     }
 
+  }
+
+  usernameChanged(event){
+    this.setState({username: event.target.value});
   }
 
   firstChanged(event){
@@ -36,12 +41,14 @@ export default class CreateAccount extends Component {
   }
 
   createAccount(e){
+    var self = this
     e.preventDefault();
     $.ajax({
             method: 'POST', 
             url:'http://localhost:3001/api/user',
             contentType: 'application/json',
             data: JSON.stringify({
+                username: this.state.username,
                 first: this.state.first,
                 last: this.state.last, 
                 password: this.state.password,
@@ -50,7 +57,7 @@ export default class CreateAccount extends Component {
               })
           })
           .done(function(result){
-            console.log(result);
+            self.props.toggleLogin('LoginPage');
           })
   }
   render(){
@@ -58,6 +65,10 @@ export default class CreateAccount extends Component {
       <div>
           <header>Create Account</header>
           <form>
+            <div className="form-group">  
+              <label htmlFor='username'>Username: </label>
+              <input name='username' value={this.state.username} onChange={this.usernameChanged.bind(this)}/>
+            </div>
             <div className="form-group">  
               <label htmlFor='firstName'>First Name: </label>
               <input name='firstName' value={this.state.first} onChange={this.firstChanged.bind(this)}/>
