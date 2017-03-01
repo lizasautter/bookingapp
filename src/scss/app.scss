@@ -1,0 +1,103 @@
+$primary-color: #474747 !important;
+$secondary-color: #d6fbff;
+$accent-color: #0f4f56;
+$transparent-color: rgba(0,0,0,.15) !important;
+$secondary-color-transparent: rgba(0,0,0,.5) !important;
+$hover-color-transparent: rgba(0,0,0,.9) !important;
+$primary-font:'Oswald', sans-serif;
+
+html {
+  background: url(http://lizaoutdoors.com/wp-content/uploads/2017/02/lake-1936627.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: $primary-font; 
+  font-size: 16px;
+
+  .accountHeader{
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: right;
+    padding: 20px;
+    a{
+      color: $primary-color;
+      text-decoration: none;
+      padding: 20px;
+      &:link {
+        color: $primary-color;
+      }
+      &:hover{
+        background-color: $secondary-color-transparent;
+        color: rgba(255, 255, 255, 0.5) !important;
+        width: 100%;
+      }
+
+    }
+  }
+
+  .App-header {
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: 10%;
+    height: 400px;
+    width: 50%;
+    margin-left: 25%;
+    padding: 20px;
+    color: white;
+    header {
+      font-size: 20px;
+      text-transform: uppercase;
+      text-align: center;
+      color: $primary-color;
+      font-weight: bold;
+    }
+  }
+
+
+.form-group {
+  padding: 10px;
+  label {
+    color: $primary-color;
+
+  }
+   input {
+    background-color: $transparent-color;
+    color: $primary-color !important;
+    border: none;
+    line-height: 20px;
+    font-size: 14px;
+    font-family: $primary-font;
+  }
+  select {
+    background-color: $transparent-color;
+    font-family: $primary-font;
+    font-size: 14px;
+
+  }
+
+
+ 
+}
+
+  button {
+    background-color: $secondary-color-transparent;
+    opacity: .5;
+    color: white;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    float: right;
+    font-family: $primary-font;
+    font-size: 14px;
+
+        .back {
+    float: left !important;
+  }
+   
+    &:hover {
+        background-color: $hover-color-transparent;
+    }
+
+  }
+
+}
+

@@ -1,0 +1,67 @@
+html {
+  background: url(http://lizaoutdoors.com/wp-content/uploads/2017/02/lake-1936627.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px; }
+  html .accountHeader {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: right;
+    padding: 20px; }
+    html .accountHeader a {
+      color: #474747 !important;
+      text-decoration: none;
+      padding: 20px; }
+      html .accountHeader a:link {
+        color: #474747 !important; }
+      html .accountHeader a:hover {
+        background-color: rgba(0, 0, 0, 0.5) !important;
+        color: rgba(255, 255, 255, 0.5) !important;
+        width: 100%; }
+  html .App-header {
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: 10%;
+    height: 400px;
+    width: 50%;
+    margin-left: 25%;
+    padding: 20px;
+    color: white; }
+    html .App-header header {
+      font-size: 20px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #474747 !important;
+      font-weight: bold; }
+  html .form-group {
+    padding: 10px; }
+    html .form-group label {
+      color: #474747 !important; }
+    html .form-group input {
+      background-color: rgba(0, 0, 0, 0.15) !important;
+      color: #474747 !important !important;
+      border: none;
+      line-height: 20px;
+      font-size: 14px;
+      font-family: "Oswald", sans-serif; }
+    html .form-group select {
+      background-color: rgba(0, 0, 0, 0.15) !important;
+      font-family: "Oswald", sans-serif;
+      font-size: 14px; }
+  html button {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    opacity: .5;
+    color: white;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    float: right;
+    font-family: "Oswald", sans-serif;
+    font-size: 14px; }
+    html button .back {
+      float: left !important; }
+    html button:hover {
+      background-color: rgba(0, 0, 0, 0.9) !important; }
+
+/*# sourceMappingURL=app.css.map */
